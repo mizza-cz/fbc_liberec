@@ -1,0 +1,90 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+  position: relative;
+  overflow-x: hidden;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  line-height: 110%;
+  letter-spacing: -0.15rem;
+  text-transform: uppercase;
+  margin-bottom: 11px;
+}
+h2 {
+  text-transform: uppercase;
+  line-height: 110%;
+  font-size: 3rem;
+  font-weight: 900;
+}
+h3 {
+  font-weight: 900;
+  letter-spacing: -0.03em;
+  line-height: 110%;
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+h6 {
+  letter-spacing: -0.01em;
+  font-weight: 700;
+  line-height: 140%;
+  font-size: 1.125rem;
+  margin-bottom: 8px;
+}
+p {
+  letter-spacing: -0.01rem;
+}
+body {
+  background-color: #181a1a;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1.125rem;
+  color: #fff;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+.btn {
+  background-color: #22c0d8;
+  color: #181a1a;
+  letter-spacing: -0.01rem;
+
+  transition: all 0.4s;
+  padding: 21px 36px 20px 36px;
+  &:hover {
+    background-color: #5cbdd5;
+  }
+}

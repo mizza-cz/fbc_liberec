@@ -1,0 +1,192 @@
+@media (max-width: 1400px) {
+  .top::before {
+    height: 120%;
+  }
+  .footer__inner {
+    margin-top: -50px;
+  }
+  .footer__copyright {
+    right: 0;
+  }
+  .footer__img {
+    width: 70%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .container {
+    padding: 0 35px;
+  }
+  .top {
+    padding-bottom: 120px;
+  }
+  .top::before {
+    height: 115%;
+  }
+}
+
+@media (max-width: 1040px) {
+  h1 {
+    font-size: 4rem;
+  }
+}
+@media (max-width: 960px) {
+  .header__logo {
+    width: auto;
+  }
+  .top {
+    padding-top: 65%;
+    padding-bottom: 70px;
+  }
+
+  .tabs,
+  .otazky__menu {
+    padding-left: 40px;
+  }
+
+  .top__content {
+    max-width: 100%;
+  }
+  .top::before {
+    top: -5%;
+    transform: translateX(24%);
+    height: 68%;
+  }
+}
+
+@media (max-width: 800px) {
+  .tab__content {
+    padding-left: 0;
+  }
+  .bottom__inner {
+    flex-wrap: wrap;
+  }
+  .tabs,
+  .tab__content {
+    flex: 100%;
+    margin-bottom: 20px;
+  }
+
+  .top::before {
+    top: -8%;
+  }
+  .navbar__link {
+    display: none;
+  }
+}
+
+@media (max-width: 740px) {
+  .footer__copyright {
+    margin-left: auto;
+    position: relative;
+    margin: 50px -30px 20px auto;
+    bottom: 0;
+  }
+  .footer__img {
+    display: none;
+  }
+  .otazky__menu li p,
+  .top__content p {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 700px) {
+  .otazky h2 {
+    margin-bottom: 32px;
+  }
+  .top::before {
+    height: 62%;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 2.2rem;
+  }
+}
+@media (max-width: 620px) {
+  .top {
+    padding-top: 100%;
+  }
+  .top::before {
+    top: -4%;
+    height: 62%;
+    transform: translateX(10%);
+  }
+}
+
+@media (max-width: 520px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+  .footer__inner {
+    margin-top: 0;
+    left: 0;
+    justify-content: center;
+  }
+  .footer__copyright {
+    margin: 0px 0 20px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .tabs,
+  .otazky__menu {
+    padding-left: 0px;
+  }
+  .top::before {
+    height: 55%;
+  }
+}
+
+@media (max-width: 420px) {
+  .header__inner {
+    padding: 12px 0;
+  }
+  .header__logo a {
+    height: 45px;
+    width: 45px;
+  }
+  h1 {
+    font-size: 2.4rem;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .form input,
+  .form .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+@media (max-width: 380px) {
+  .top::before {
+    height: 49%;
+  }
+  .header__tel a {
+    margin-left: 3px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 360px) {
+  .top {
+    padding-top: 112%;
+    &::before {
+      top: -2%;
+    }
+  }
+  .header__tel {
+    text-align: right;
+    a {
+      display: block;
+    }
+  }
+}
