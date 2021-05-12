@@ -111,6 +111,26 @@
   li {
     padding-right: 20px;
     margin-bottom: 32px;
+    div {
+      padding-top: 0;
+      letter-spacing: -0.01rem;
+      color: #fff;
+
+      padding-bottom: 0px;
+      font-size: 0rem;
+      line-height: 0;
+      transition: all 0.3s;
+      opacity: 0;
+      ul {
+        padding-left: 20px;
+        max-width: 526px;
+      }
+      li {
+        padding-right: 0;
+        margin-bottom: 0;
+        list-style: initial;
+      }
+    }
 
     span {
       transition: all 0.4s;
@@ -136,6 +156,10 @@
       background-repeat: no-repeat;
       background-size: contain;
     }
+    a {
+      color: #22c0d8;
+    }
+
     p {
       padding-top: 0;
       letter-spacing: -0.01rem;
@@ -150,6 +174,13 @@
   }
 }
 .otazky__menu li.active {
+  div {
+    font-size: 1.125rem;
+    line-height: 140%;
+    opacity: 1;
+    padding-bottom: 25px;
+    padding-top: 12px;
+  }
   span::before {
     transform: rotate(0deg);
   }
@@ -159,6 +190,9 @@
     opacity: 1;
     padding-bottom: 25px;
     padding-top: 12px;
+  }
+  p + p {
+    padding-top: 0;
   }
 }
 
@@ -182,6 +216,8 @@
 .tabs {
   flex: 0 50%;
   padding-left: 108px;
+  position: relative;
+  z-index: 9999;
   .tab {
     cursor: pointer;
     margin-bottom: 32px;
@@ -271,7 +307,7 @@
     position: relative;
     top: 0;
     left: -80px;
-    margin-top: -115px;
+    margin-top: -75px;
   }
   &__copyright {
     display: flex;
