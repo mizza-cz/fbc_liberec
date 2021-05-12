@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
   $('.otazky__menu span').on('click', function () {
     $(this).closest('.otazky__menu li').toggleClass('active');
   });
@@ -16,9 +16,28 @@ $(function () {
   });
   var $page = $('html, body');
   $('a[href*="#"]').click(function () {
-     $page.animate({
-        scrollTop: $($.attr(this, 'href')).offset().top
-     }, 400);
-     return false;
+    $page.animate(
+      {
+        scrollTop: $($.attr(this, 'href')).offset().top,
+      },
+      400,
+    );
+    return false;
+  });
+  //E-mail Ajax Send
+  $('.form').submit(function () {
+    //Change
+    var th = $(this);
+    $.ajax({
+      type: 'POST',
+      url: 'mail.php', //Change
+      data: th.serialize(),
+    }).done(function () {
+      setTimeout(function () {
+        // Done Functions
+        th.trigger('reset');
+      }, 1000);
+    });
+    return false;
   });
 });
