@@ -1,4 +1,14 @@
 $(document).ready(function () {
+  $('.category .category-tab').on('click', function (event) {
+    var id = $(this).attr('data-id');
+    $('.category').find('.category__item').removeClass('category__item-active').hide();
+    $('.category .category-tabs').find('.category-tab').removeClass('visiable');
+    $(this).addClass('visiable');
+    $('#' + id)
+      .addClass('category__item-active')
+      .fadeIn();
+    return false;
+  });
   $('.otazky__menu span').on('click', function () {
     $(this).closest('.otazky__menu li').toggleClass('active');
   });
@@ -33,6 +43,7 @@ $(document).ready(function () {
       url: 'mail.php', //Change
       data: th.serialize(),
     }).done(function () {
+      alert('Zpráva byla odeslána.');
       setTimeout(function () {
         // Done Functions
         th.trigger('reset');

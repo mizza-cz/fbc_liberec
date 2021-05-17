@@ -328,4 +328,23 @@
     }
   }
 }
+.category__item {
+  display: none;
+  &.category__item-active {
+    display: block;
+  }
+}
+.category__top {
+  display: flex;
+  a {
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .category-tab.visiable a {
+    color: #22c0d8;
+  }
+}
+.category-tabs {
+  margin-left: 10px;
+}
 @import 'media';
